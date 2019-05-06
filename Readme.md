@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Valerian](https://up.htmlacademy.ru/htmlcss/25/user/1019449).
-* Наставник: `Неизвестно`.
+* Наставник: [Владислав Кривокора] (https://htmlacademy.ru/profile/krivokora).
 
 ---
 
