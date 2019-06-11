@@ -15,6 +15,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .container h1 {
   margin: 0;
   padding: 0;
@@ -28,12 +33,22 @@ a {
   background-color: #eeeeee;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
+
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .main-header {
@@ -48,15 +63,19 @@ a {
 .main-nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0 20px;
   font-size: 16px;
   line-height: 30px;
   color: #000000;
-
+  padding-top: 49px;
   background-color: #eeeeee;
 }
 
+
 .site-nav {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
 }
@@ -64,8 +83,10 @@ a {
 .site-nav a,
 .order-cart {
   text-transform: uppercase;
-
+  display: block;
   color: #000000;
+  vertical-align: middle;
+  padding: 10px 20px;
 }
 
 .order-cart {
