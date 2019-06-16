@@ -23,8 +23,6 @@ img {
 .container h1 {
   margin: 0;
   padding: 0;
-
-  width: 100%;
   text-align: center;
   font-style: normal;
   font-weight: 500;
@@ -33,11 +31,6 @@ img {
   padding-top: 58px;
   padding-bottom: 110px;
   background-color: #eeeeee;
-}
-
-.container .catalog-wrapper {
-  background-color: #eeeeee;
-  width: 100%;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -63,8 +56,9 @@ input[type="radio"].visually-hidden {
 }
 
 .container-wrapper {
-  width: 1200px;
+  width: 1160px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .main-logo img {
@@ -76,13 +70,13 @@ input[type="radio"].visually-hidden {
 .main-nav {
   display: flex;
   justify-content: space-between;
-  padding: 0 20px;
-  padding-bottom: 18px;
+  padding: 0 0;
   font-size: 16px;
   line-height: 30px;
   color: #000000;
   padding-top: 49px;
   background-color: #eeeeee;
+  padding-bottom: 18px;
 }
 
 
@@ -136,7 +130,7 @@ input[type="radio"].visually-hidden {
 }
 
 .cases {
-  padding: 0 20px;
+  padding: 0 0;
   margin-top: 80px;
 }
 
@@ -145,7 +139,7 @@ input[type="radio"].visually-hidden {
   justify-content: flex-start;
   margin: 0;
   padding: 0;
-
+  padding-bottom: 80px;
   list-style: none;
 }
 
@@ -242,7 +236,6 @@ input[type="radio"].visually-hidden {
   border-radius: 3px;
 }
 
-
 .item-apps a:hover{
   background-color: #00bc6c;
 }
@@ -267,6 +260,301 @@ input[type="radio"].visually-hidden {
 
 .item-pres a:active:after {
   background-color: #e5a722;
+}
+
+.about {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 40px;
+  border-top: 2px solid #eeeeee;
+  margin-bottom: 80px;
+}
+
+.about-us {
+  max-width: 660px;
+  margin-top: 36px;
+}
+
+.about-header {
+  display: block;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.about-us p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #283136;
+
+  margin: 0;
+  padding-top: 33px;
+}
+
+.orders-header-list {
+  display: block; 
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 40px;
+}
+
+.orders-list {
+  list-style: none;
+  font-size: 16px;
+  line-height: 24px;
+  color: #283136;
+  font-weight: normal;
+  padding: 0;
+  padding-left: 37px;
+  margin: 0;
+  margin-top: 24px;
+}
+
+
+.orders-list li {
+  position: relative;
+  margin-bottom: 23px;
+}
+
+.orders-list li::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  top: 11px;
+  left: 0;
+  background-color: red;
+  margin-left: -37px;
+
+}
+
+.about-stats {
+  max-width: 360px;
+}
+
+.about-logo {
+  margin: 0;
+  padding: 0;
+}
+
+.about-logo img {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.about-stats span {
+  display: block;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 36px;
+
+  text-align: center;
+}
+
+.about-stats dl {
+  display: flex;
+  margin: 0;
+  margin-top: 41px;
+}
+
+.percent-case {
+  display: flex;
+  flex-direction: column;
+}
+
+.percent-case dt {
+  order: 2;
+
+  font-size: 16px;
+  line-height: 18px;
+
+  color: #283136;
+  font-weight: normal;
+}
+
+.percent-case dd {
+  order: 1;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  margin-right: 20px;
+
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: bold;
+}
+
+.percent-case sup {
+  top: -14px;
+  font-size: 60%;
+}
+
+.our-clients {
+  min-height: 180px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding-left: 0;
+  margin-top: 49px;
+
+  list-style: none;
+  border-bottom: 2px solid #eeeeee;
+  border-top: 2px solid #eeeeee;
+}
+
+.clients-item {
+  position: relative;
+  box-sizing: border-box;
+  width: 280px;
+  min-height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 20px;
+  margin-right: 20px;
+} 
+
+.clients-item:nth-of-type(4n) {
+  width: 260px;
+  padding-right: 0;
+  margin-right: 0;
+}
+
+
+.our-clients li::after {
+  content: "";
+  
+  position: absolute;
+  top: 50%;
+  right: 0;
+  
+  width: 2px;
+  height: 52px;
+  margin-top: -26px;
+
+  background-color: #eeeeee;
+}
+
+.our-clients li:last-of-type::after {
+  content: none;
+}
+
+.clients-item a {
+  opacity: 0.2;
+  padding-top: 6px;
+}
+
+.clients-item a:hover,
+.clients-item a:focus {
+  opacity: 1;
+}
+
+.clients-item a:active {
+  opacity: 0.1;
+}
+
+.clients-link img {
+  vertical-align: bottom;
+}
+
+.map {
+  width: 100%;
+  height: 416px;
+  background: url("../img/map.jpg") no-repeat 50% 40%;
+}
+
+.map .container-wrapper {
+  display: flex;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.feedback {
+  box-sizing: border-box;
+  width: 319px;
+  padding: 0 50px;
+  padding-top: 48px;
+  background-color: white;
+}
+
+.feedback h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.feedback p {
+  max-width: 209px;
+
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+
+  color: #666666;
+}
+
+.address .tel {
+  display: block;
+  margin-top: 18px;
+}
+
+.feedback-button {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 219px;
+  height: 50px;
+  text-align: center;
+  padding-top: 17px;
+  padding-bottom: 18px;
+  border-radius: 3px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  
+  cursor: pointer;
+  outline: none;
+  color: #ffffff;
+  background-color: #fb565a;
+
+  margin-bottom: 47px;
+}
+
+.feedback-button:hover {
+  background-color: #e74246;
+}
+
+.feedback-button:active {
+  background-color: #c13135;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.feedback-button:active::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 3px;
+  left: 0;
+  width: 219px;
+  height: 47px;
+  
+  background-color: #d7373b;
+  border-radius: 3px;
 }
 
 .catalog-columns {
@@ -430,6 +718,8 @@ input[type="radio"].visually-hidden {
   background-color: #eeeeee;
   color: #000000;
   outline: none;
+
+  cursor: pointer;
 }
 
 .filter .button:hover {
