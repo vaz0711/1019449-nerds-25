@@ -17,7 +17,7 @@
         <ul class="site-nav">
           <li><a href="studio.html">Студия</a></li>
           <li><a href="clients.html">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
+          <li><a class="current" href="catalog.html">Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
         <a href="cart.html" class="order-cart">Корзина</a>
@@ -32,6 +32,22 @@
       <section class="filter-panel">
         <h2 class="visually-hidden">Фильтр шаблонов</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset class="filter-range">
+            <legend>Стоимость:</legend>
+            <div class="range">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+              </div>
+            </div>
+          </fieldset>
           <fieldset class="filter-grid">
             <legend>
               Сетка:
@@ -97,6 +113,20 @@
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Список готовых шаблонов</h2>
+        <div class="sort">
+          <span>Сортировать:</span>
+          <div class="sort-type">
+            <div class="sort-buttons">
+              <button class="sort-button enabled">По цене</button>
+              <button class="sort-button">По типу</button>
+              <button class="sort-button">По названию</button>
+            </div>
+            <div class="sort-controls">
+              <button class="dir-button down enabled"></button>
+              <button class="dir-button up"></button>
+            </div>
+          </div>
+        </div>
         <ul class="catalog-list">
           <li class="catalog-item">
             <figure class="item-case">
