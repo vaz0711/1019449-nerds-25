@@ -664,12 +664,27 @@ input[type="radio"].visually-hidden {
   color: #666666;
 }
 
+.address {
+  display: block;
+  margin: 16px 0;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-style: normal;
+  font-weight: 400;
+
+  color: rgb(102, 102, 102);
+}
+
 .address .tel {
   display: block;
   margin-top: 18px;
+
+  color: rgb(102, 102, 102);
 }
 
 .feedback-button {
+  display: block;
   position: relative;
   z-index: 1;
   display: inline-block;
@@ -761,8 +776,13 @@ input[type="radio"].visually-hidden {
   background: #d7dcde;
 }
 
+.bar {
+  margin-left: 20%; 
+  width: 70%
+}
+
 .range-controls .bar {
-  width: 70%;
+  width: 30%;
   height: 2px;
 
   background: #00ca74;
@@ -1032,6 +1052,7 @@ input[type="radio"].visually-hidden {
 }
 
 .sort-button {
+  display: block;
   margin: 0;
   padding: 0;
 
@@ -1043,6 +1064,7 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   font-weight: normal;
   text-transform: uppercase;
+  color: #000000;
 
   cursor: pointer;
   outline: none;
@@ -1075,14 +1097,17 @@ input[type="radio"].visually-hidden {
 }
 
 .dir-button {
+  display: block;
+
   margin: 0;
   padding: 0;
   width: 11px;
   height: 10px;
   
-
   border: none;
   outline: none;
+
+  font-size: 0;
 
   cursor: pointer;
 
