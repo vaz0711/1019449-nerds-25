@@ -97,7 +97,6 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   display: block;
   color: #000000;
-  vertical-align: middle;
   padding: 12px 0px;
   padding-bottom: 4px;
 }
