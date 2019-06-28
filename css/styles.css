@@ -424,19 +424,16 @@ input[type="radio"].visually-hidden {
 }
 
 .about {
-  box-sizing: border-box;
   display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-  flex-direction: row;
   justify-content: space-between;
+  padding: 0;
   padding-top: 40px;
   border-top: 2px solid #eeeeee;
   margin-bottom: 51px;
 }
 
 .about-us {
-  max-width: 660px;
+  width: 660px;
   margin-top: 33px;
 }
 
@@ -496,7 +493,7 @@ input[type="radio"].visually-hidden {
 }
 
 .about-stats {
-  max-width: 360px;
+  width: 360px;
 }
 
 .about-logo {
