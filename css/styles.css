@@ -331,7 +331,7 @@ input[type="radio"].visually-hidden {
   background: url("../img/illustration-3.jpeg") no-repeat 0 0;
 }
 
-.case-items li h3 {
+.case-items h3 {
   margin: 0;
 
   text-transform: uppercase;
@@ -339,7 +339,7 @@ input[type="radio"].visually-hidden {
   font-size: 24px;
 }
 
-.case-items li p {
+.case-items p {
   width: 260px;
 
   font-style: normal;
