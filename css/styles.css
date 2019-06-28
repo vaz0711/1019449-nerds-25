@@ -533,6 +533,7 @@ input[type="radio"].visually-hidden {
 
   font-size: 16px;
   line-height: 18px;
+  word-wrap: break-word;
 
   color: #283136;
   font-weight: normal;
