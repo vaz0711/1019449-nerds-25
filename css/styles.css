@@ -131,11 +131,11 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.main-logo:hover {
+.main-logo img:hover {
   opacity: 0.8;
 }
 
-.main-logo:active {
+.main-logo img:active {
   opacity: 0.3;
 }
 
@@ -637,17 +637,18 @@ input[type="radio"].visually-hidden {
   content: none;
 }
 
-.clients-item a {
+.clients-item img {
   padding-top: 6px;
 
   opacity: 0.2;
 }
 
-.clients-link:hover {
+.clients-link img:hover,
+.clients-link img:focus {
   opacity: 1;
 }
 
-.clients-link:active {
+.clients-link img:active {
   opacity: 0.1;
 }
 
