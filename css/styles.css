@@ -537,6 +537,7 @@ input[type="radio"].visually-hidden {
 
 .about-stats dl {
   display: flex;
+  width: 360px;
   margin: 0;
   margin-top: 41px;
 }
@@ -544,26 +545,34 @@ input[type="radio"].visually-hidden {
 .percent-case {
   display: flex;
   flex-direction: column;
+  padding: 0;
+  margin: 0;
+  margin-right: 22px;
+}
+
+.percent-case:last-child {
+  margin-right: 0;
 }
 
 .percent-case dt {
   display: block;
+  margin: 0;
+  padding: 0;
   order: 2;
 
   font-size: 16px;
   line-height: 18px;
   font-weight: normal;
-  word-wrap: break-word;
   color: #283136;
 }
 
 .percent-case dd {
-  order: 1;
-
-  padding: 0;
+  display: block;
   margin: 0;
   margin-bottom: 18px;
-  margin-right: 22px;
+  padding: 0;
+  order: 1;
+  word-wrap: break-word;
 
   font-size: 45px;
   line-height: 45px;
