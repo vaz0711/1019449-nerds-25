@@ -1493,7 +1493,7 @@ input[type="radio"].visually-hidden {
 
 .modal-write {
   box-sizing: border-box;
-  bottom: 180px;
+  bottom: 15%;
   left: 50%;
 
   width: 960px;
