@@ -11,7 +11,6 @@ var text = popup.querySelector("[name=text]");
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.remove("visually-hidden");
-  username.focus();
 });
 
 close.addEventListener("click", function (evt) {
