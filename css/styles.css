@@ -545,6 +545,7 @@ input[type="radio"].visually-hidden {
 .percent-case {
   display: flex;
   flex-direction: column;
+  word-wrap: break-word;
   padding: 0;
   margin: 0;
   margin-right: 22px;
@@ -572,7 +573,6 @@ input[type="radio"].visually-hidden {
   margin-bottom: 18px;
   padding: 0;
   order: 1;
-  word-wrap: break-word;
 
   font-size: 45px;
   line-height: 45px;
@@ -1551,7 +1551,11 @@ input[type="radio"].visually-hidden {
 }
 
 .form-item input::-webkit-input-placeholder,
-.form-item textarea::-webkit-input-placeholder {
+.form-item textarea::-webkit-input-placeholder,
+.form-item input::-moz-placeholder,
+.form-item textarea::-moz-placeholder,
+.form-item input:-ms-input-placeholder,
+.form-item textarea:-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.5); 
 }
 
@@ -1600,19 +1604,29 @@ input[type="radio"].visually-hidden {
 }
 
 .form-item input:focus::-webkit-input-placeholder,
-.form-item textarea:focus::-webkit-input-placeholder
-{
+.form-item textarea:focus::-webkit-input-placeholder,
+.form-item input:focus::-moz-placeholder,
+.form-item textarea:focus::-moz-placeholder,
+.form-item input:focus:-ms-input-placeholder,
+.form-item textarea:focus:-ms-input-placeholder {
   color: rgba(0, 0, 0); 
 }
 
 .form-item input:invalid::-webkit-input-placeholder,
-.form-item textarea:invalid::-webkit-input-placeholder
-{
+.form-item textarea:invalid::-webkit-input-placeholder,
+.form-item input:invalid::-moz-placeholder,
+.form-item textarea:invalid::-moz-placeholder,
+.form-item input:invalid:-ms-input-placeholder,
+.form-item textarea:invalid:-ms-input-placeholder {
   color: #fb565a;
 }
 
 input.invalid-input::-webkit-input-placeholder,
-textarea.invalid-input::-webkit-input-placeholder {
+textarea.invalid-input::-webkit-input-placeholder,
+input.invalid-input::-moz-placeholder,
+textarea.invalid-input::-moz-placeholder,
+input.invalid-input:-ms-input-placeholder,
+textarea.invalid-input:-ms-input-placeholder {
   color: #fb565a;
 
   border-color: #e74246;
