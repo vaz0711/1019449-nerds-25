@@ -711,13 +711,8 @@ input[type="radio"].visually-hidden {
   background: #d7dcde;
 }
 
-.bar {
-  margin-left: 20%; 
-  width: 70%
-}
-
 .range-controls .bar {
-  width: 30%;
+  width: 70%;
   height: 2px;
 
   background: #00ca74;
@@ -741,11 +736,11 @@ input[type="radio"].visually-hidden {
 }
 
 .range-controls .toggle-min {
-  left: 50px;
+  left: 18px;
 }
 
 .range-controls .toggle-max {
-  left: 110px;
+  left: 160px;
 }
 
 .price-controls {
