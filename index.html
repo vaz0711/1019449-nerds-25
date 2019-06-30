@@ -11,43 +11,47 @@
     <header class="main-header">
       <div class="container-wrapper">
       <nav class="main-nav">
-        <a class="main-logo" href="#"><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс"></a>  
+        <a class="main-logo"><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс"></a>  
         <ul class="site-nav">
           <li><a href="studio.html">Студия</a></li>
           <li><a href="clients.html">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
-          <a href="cart.html" class="order-cart">Корзина</a>
+        <a href="cart.html" class="order-cart">Корзина</a>
       </nav>      
       </div>
     </header>
     <main class="container">
+      <h1 class="visually-hidden">Дизайн-студия "Нёрдс"</h1>
       <section class="slider">
         <div class="container-wrapper">
           <h2 class="visually-hidden">Преимущества</h2>
+          <input class="slide-1 visually-hidden" type="radio" id="product-1" name="toggle" checked>
+          <input class="slide-2 visually-hidden" type="radio" id="product-2" name="toggle">
+          <input class="slide-3 visually-hidden" type="radio" id="product-3" name="toggle">
           <div class="slider-controls">
-            <i class="active"></i>
-            <i></i>
-            <i></i>
+            <label class="slider-controls-item slider-controls-item-1" for="product-1">1</label>
+            <label class="slider-controls-item slider-controls-item-2" for="product-2">2</label>
+            <label class="slider-controls-item slider-controls-item-3" for="product-3">3</label>
           </div>
-        <ul class="slider-list">
-          <li class="slider-item">
-            <h3>Долго, дорого, скрупулезно.</h3>
-            <p>Математически выверенный дизайн для&nbsp;вашего&nbsp;сайта&nbsp;или мобильного приложения.</p>
-            <a class="slider-item-button" href="#">Узнать больше</a>
-          </li>
-          <li class="slider-item">
-            <h3>Любим математику как никто другой</h3>
-            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-            <a class="slider-item-button" href="#">Узнать больше</a>
-          </li>
-          <li class="slider-item">
-            <h3>Только ночь, только&nbsp;хардкор</h3>
-            <p>Работать днем, как все? Мы против этого. Ближе&nbsp;к&nbsp;полуночи работа только начинается.</p>
-            <a class="slider-item-button" href="#">Узнать больше</a>
-          </li>
-        </ul>
+          <ul class="slider-list">
+            <li class="slider-item">
+              <h3>Долго, дорого, скрупулезно.</h3>
+              <p>Математически выверенный дизайн для&nbsp;вашего&nbsp;сайта&nbsp;или мобильного приложения.</p>
+              <a class="slider-item-button" href="#">Узнать больше</a>
+            </li>
+            <li class="slider-item">
+              <h3>Любим математику как никто другой</h3>
+              <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+              <a class="slider-item-button" href="#">Узнать больше</a>
+            </li>
+            <li class="slider-item">
+              <h3>Только ночь, только&nbsp;хардкор</h3>
+              <p>Работать днем, как все? Мы против этого. Ближе&nbsp;к&nbsp;полуночи работа только начинается.</p>
+              <a class="slider-item-button" href="#">Узнать больше</a>
+            </li>
+          </ul>
         </div>
       </section>
       <div class="container-wrapper">
@@ -76,13 +80,13 @@
         <section class="about">
           <h2 class="visually-hidden">О нас</h2>
           <div class="about-us">
-            <span class="about-header">Мы — маленькая, но гордая дизайн-студия из Краснодара. </span>
+            <b class="about-header">Мы — маленькая, но гордая дизайн-студия из Краснодара. </b>
             <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая
               рук, как роботы.</p>
             <span class="orders-header-list">Выполняем заказы на разработку:</span>
             <ul class="orders-list">
               <li>Веб-сайтов любой сложности</li>
-              <li> Мобильных приложений для iOS и Android</li>
+              <li>Мобильных приложений для iOS и Android</li>
               <li>Слайдшоу и видео для корпоративных презентаций</li>
             </ul>
           </div>
@@ -136,7 +140,7 @@
       
               <a class="tel" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
             </address>
-            <a class="feedback-button" href="#">Напишите нам</a>
+            <a class="feedback-button" href="feedback.html">Напишите нам</a>
           </section>
         </div>
         <iframe src="https://yandex.ru/map-widget/v1/-/CCcCzF5U" width="100%" height="416" frameborder="1"
