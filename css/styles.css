@@ -1309,6 +1309,7 @@ input[type="radio"].visually-hidden {
 .feedback {
   position: absolute;
   top: 48px;
+  z-index: 1;
 
   box-sizing: border-box;
   width: 319px;
