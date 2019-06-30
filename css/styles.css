@@ -1449,6 +1449,7 @@ input[type="radio"].visually-hidden {
 
 .social-button:active {
   background-color: #d7373b;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 .social-button:active path {
