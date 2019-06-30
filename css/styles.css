@@ -558,7 +558,6 @@ input[type="radio"].visually-hidden {
   width: 100%;
   padding: 0;
   margin: 0;
-  margin-right: 22px;
 }
 
 .percent-case:last-child {
@@ -763,7 +762,9 @@ input[type="radio"].visually-hidden {
 }
 
 .price-controls input {
-  width: 60px;
+  box-sizing: border-box;
+  width: 80px;
+  height: 38px;;
   padding: 8px 10px;
   margin-left: 10px;
   
@@ -1338,7 +1339,7 @@ input[type="radio"].visually-hidden {
 
 .feedback {
   position: absolute;
-  top: 48px;
+  top: 55px;
   z-index: 1;
 
   box-sizing: border-box;
