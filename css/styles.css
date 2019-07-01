@@ -920,6 +920,8 @@ input[type="radio"].visually-hidden {
   position: relative;
   z-index: 1;
 
+  box-sizing: border-box;
+  padding: 17px 88px;
   width: 260px;
   height: 50px;
   margin-top: 4px;
@@ -948,6 +950,8 @@ input[type="radio"].visually-hidden {
 }
 
 .filter .button:active {
+  padding: 17px 88px;
+  
   color: rgba(0,0,0,0.3); 
 
   background-color: #d5d5d5;
