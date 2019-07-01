@@ -1,8 +1,6 @@
 var link = document.querySelector(".feedback-button");
-
 var popup = document.querySelector(".modal");
 var close = popup.querySelector(".modal-close");
-
 var form = popup.querySelector(".submit-form");
 var username = popup.querySelector("[name=name]");
 var email = popup.querySelector("[name=email]");
